@@ -12,5 +12,8 @@ app.get("/GitPub", (req, res) => {
 })
 
 app.get("/drinks", (req, res) => {
-    res.send(drinks)
+    res.render("index", {drinks: drinks})
 })
+
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
