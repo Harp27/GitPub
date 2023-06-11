@@ -1,0 +1,16 @@
+{
+  "name": "week7day2hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servergp.js",
+  "scripts": {
+    "start": "node servergp.js",
+    "dev": "node --watch servergp.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
