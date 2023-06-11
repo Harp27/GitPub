@@ -14,8 +14,12 @@
 <body>
     <h1>Welcome to GitPub!</h1>
     <ul>
-        <% drinks.forEach(drink => { %>
-            <li><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></li>
+        <% drinks.forEach((drink, index) => { %>
+            <li>
+                <a href="/drinks/<%= index %>">
+                <%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %>
+                </a>
+            </li>
             <% }); %>
     </ul>
     
