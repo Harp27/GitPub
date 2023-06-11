@@ -17,3 +17,7 @@ app.get("/drinks", (req, res) => {
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
+
+app.get("/drinks/:id", (req, res) => {
+    res.send(req.params.id);
+})
