@@ -19,5 +19,8 @@ app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 
 app.get("/drinks/:id", (req, res) => {
-    res.send(req.params.id);
+    const drinkId = req.params.id;
+    const drink= drinks[drinkId];
+    drink.image += ".png";
+    res.render("show", {drink})
 })
